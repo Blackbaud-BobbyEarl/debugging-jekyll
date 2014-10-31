@@ -4,6 +4,11 @@ sitemap: false
 
 <h2>TEST</h2>
 <p>This file is NOT included in the sitemap.</p>
+
 {% if include.fromInclude %}
-<p>I AM being currently viewed as an included file.  <a href="{{ site.baseurl }}file1.html">View me standalone.</a></p>
+  <p>I AM being currently viewed as an included file.  <a href="{{ site.baseurl }}file1.html">View me standalone.</a></p>
+{% else %}
+  <p>I AM NOT being currently viewed as an included file.</p>
+{% endif %}
+
 <p>Custom: {{ site.custom }}</p>
