@@ -12,5 +12,12 @@
 <br />
 
 <div style="background: #EFEFEF; border: solid 1px #CCC;">
+  {% assign name = 'test1.html' %}
+  {% include_relative {{ name }} fromInclude="true" %}  
+</div>
+
+<br />
+
+<div style="background: #EFEFEF; border: solid 1px #CCC;">
   {% include test4.html fromInclude="true" %}
 </div>
