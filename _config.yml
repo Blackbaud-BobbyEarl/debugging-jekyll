@@ -1,4 +1,5 @@
 custom: "I am a custom string included via yaml."
+test: Default File
 gems:
  - jekyll-sitemap
 defaults:
